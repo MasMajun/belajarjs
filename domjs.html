@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>DOM EXAMPLE</title>
+    </head>
+    <body>
+        <h1 id="title">Javascript Dom </h1>
+        <button id="changetext">UBAH TEXT</button>
+        <script>
+            // melakukan akses element DOM 
+            const titleElement = document.getElementById("title");
+            const button = document.getElementById("changeText");
+            
+            button.addEventListener("click", ()=>{
+                titleElement.textcontent = ("hello dom");
+            }
+        );
+        </script>
+    </body>
+</html>

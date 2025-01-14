@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>BOM JS</title>
+    </head>
+    <body>
+        <h1>CONTOH BOM JS</h1>
+        <button id="showURL">TAMPILKAN URL</button>
+        <button id="goTogoogle">TAMPILKAN BROWSER GOOGLE</button>
+        <script>
+            //mengakses objek BOM
+            const showURLButton = document.getElementById("showURL");
+            const goTogoogleButton = document.getElementById("goTogoogle");
+            
+            //mengakses URL
+            showURLButton.addEventListener("click", () => {
+                alert("current url :" + window.location.href);
+            });
+
+            // menampilkan Halaman Google 
+            goTogoogleButton.addEventListener("click", () => {
+                window.location.href = "https://www.google.com"
+            });
+        </script>
+    </body>
+</html>

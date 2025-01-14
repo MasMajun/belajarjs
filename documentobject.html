@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>mengakses dan memanipulasi Elemen</title>
+    </head>
+    <body>
+        <h1 id="header">HELLO RPL</h1>
+        <p class="description"> ini adalah contoh kode program dari document </p>
+        <button id="changeContent"> ubah context </button>
+        <script>
+            // mengakses element menggunakan document object
+            const header = document.getElementById("header");
+            const paragraph = document.querySelector(".description");
+            const button = document.getElementById("changeContent");
+
+            // memanipulasi konten element
+            button.addEventListener("click", () =>{
+                header.textContent = "hello, document object";
+                paragraph.textContent = "content telah diubah oleh document";
+            });
+        </script>
+    </body>
+</html>
