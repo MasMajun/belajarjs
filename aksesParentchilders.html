@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "parent">
+        <h1>parent elemen</h1>
+        <p>Childern 1</p>
+        <p>Childern 1</p>
+    </div>
+    <script>
+        const parent = document.getElementById("parent");
+        //akses parent
+        console.log("parent node name : ",parent.parentNode.nodeName);
+        //akses Childern
+        console.log("All Child Nodes :",parent.ChildNodes);
+        console.log("Only Elemen Childern :",parent.Childern);
+        console.log("first Child :",parent.firstChild);
+        console.log("first Elemen Child :",parent.firstElemenChild);
+     </script>
+    
+</body>
+</html>
